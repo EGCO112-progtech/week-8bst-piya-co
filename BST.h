@@ -112,9 +112,7 @@ void treeOrder( TreeNodePtr treePtr, int yem)
 {
    if(treePtr !=NULL){
    treeOrder(treePtr->rightPtr, yem+1);
-   for(int i=0; i<yem; i++){
-      printf("   ");
-   }
+   for(int i=0; i<yem; i++)printf("   ");
    printf("%3d\n",treePtr->data);
    treeOrder(treePtr->leftPtr, yem+1);
    }
